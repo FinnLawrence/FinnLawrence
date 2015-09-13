@@ -122,9 +122,7 @@ html, body {
         padding-top: 80px;
         padding-bottom: 80px
     }
-}
-
-@media only screen and (min-width: 601px) {
+    
     #about {
         height: 500px;
     }
@@ -190,9 +188,9 @@ html, body {
     }
 }
 
-// LOADING
+// FULLSCREEN
 
-.fullscreen-loading {
+.fullscreen {
     position: fixed;
     top: 0;
     bottom: 0;
