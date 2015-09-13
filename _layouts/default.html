@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+        {% include imports.html %}
+        {% include analytics.html %}
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <main>
+            <!-- LOADING -->
+            {% include loading.html %}
+
+            {{ content }}
+
+            {% include fullscreen-warnings.html %}
+        </main>
+        <footer class="page-footer">
+            {% include footer.html %}
+        </footer>
+    </body>
+</html>

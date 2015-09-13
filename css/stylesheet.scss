@@ -1,0 +1,139 @@
+---
+---
+
+$light-blue: #5ec7d1;
+$mid-blue: #1ba1ab;
+$light-grey: #e8e8e8;
+$dark-grey: #231f20;
+$dark-grey-hover: #565253;
+
+$instagram: #3f729b;
+$facebook: #3b5998;
+$twitter: #55acee;
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic,300,300italic);
+
+// FONT
+
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+// GENERAL
+
+#home {
+    height: 100vh;
+
+    .parallax-title {
+
+        top: 50%;
+
+        img {
+            width: 330px;
+        }
+    }
+}
+
+#about {
+    height: 500px;
+
+    .parallax-title {
+
+        img {
+            width: 230px;
+        }
+    }
+}
+
+.parallax-container {
+    height: 300px;
+
+    .parallax {
+
+        img {
+            min-width: 100%;
+            width: 100%;
+        }
+    }
+
+    .parallax-title {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        img {
+            width: 200px;
+        }
+    }
+}
+
+.container {
+
+    p {
+        font-weight: 200;
+        line-height: 1.6;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 60%;
+        margin-bottom: 0px;
+    }
+
+    #bio {
+        padding-top: 80px;
+        padding-bottom: 80px
+    }
+}
+
+// FORMS
+
+// LOADING
+
+// FONT
+
+// CAROUSEL
+
+// BUTTONS
+
+// FOOTER
+
+// BLOG
+
+// FULLSCREEN WARNINGS
+
+.fullscreen-warning {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: $dark-grey;
+    z-index: 10000;
+    text-align: center;
+    padding: 20px;
+}
+
+.fullscreen-warning img {
+    width: 40%;
+    min-width: 250px;
+    padding-top: 10%;
+    padding-top: 20vh;
+    padding-bottom: 20px;
+}
+
+#javascript-disabled {
+    z-index: 1200;
+}
+
+.js #javascript-disabled {
+    display: none;
+}
+
+#ie8 {
+    display: none;
+}
