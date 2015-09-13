@@ -16,6 +16,29 @@ html, body {
 
 // GENERAL
 
+.more-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    i {
+        font-size: 48px;
+        padding-bottom: 10px;
+        -o-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+
+    i:hover, i:active {
+        padding-bottom: 0px;
+    }
+}
+
 #home {
     height: 100vh;
 
@@ -30,12 +53,21 @@ html, body {
 }
 
 #about {
-    height: 500px;
 
     .parallax-title {
 
         img {
             width: 230px;
+        }
+    }
+}
+
+#contact {
+
+    .parallax-title {
+
+        img {
+            width: 260px;
         }
     }
 }
@@ -67,6 +99,8 @@ html, body {
 
 .container {
 
+    margin-bottom: 0px;
+
     p {
         font-weight: 300;
         line-height: 1.6;
@@ -74,10 +108,14 @@ html, body {
     }
 }
 
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+
 @media only screen and (min-width: 993px) {
     .container {
         width: 60%;
-        margin-bottom: 0px;
     }
 
     .section {
@@ -86,12 +124,18 @@ html, body {
     }
 }
 
+@media only screen and (min-width: 601px) {
+    #about {
+        height: 500px;
+    }
+}
+
 // WORK
 
 .work-experience {
 
     .heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 300;
         margin-bottom: 10px;
         color: rgba(0,0,0,0.87);
@@ -119,12 +163,30 @@ html, body {
 }
 
 .work-experience-separator {
-    height: 160px;
+    height: 80px;
 
     .rule {
-        height: 80px;
+        height: 40px;
         width: 10%;
         border-bottom: 1px solid rgba(0,0,0,0.5);
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .work-experience-separator {
+        height: 160px;
+
+        .rule {
+            height: 80px;
+        }
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .work-experience {
+        .heading {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -173,9 +235,37 @@ html, body {
     }
 }
 
+.fullscreen-loading.success {
+    z-index: 990;
+}
+
 // FONT
 
-// BUTTONS
+// FORM
+
+.btn {
+    box-shadow: none;
+    border-radius: 0px;
+    background-color: rgba(0,0,0,0.87);
+}
+
+.btn:hover, .btn:active {
+    box-shadow: none;
+    background-color: rgba(100,100,100,0.87);
+}
+
+.input-field .prefix.active {
+    color: rgba(100,100,100,0.87);
+}
+
+input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-color: rgba(100,100,100,0.87);
+    box-shadow: 0 1px 0 0 rgba(100,100,100,0.87);
+}
+
+input[type=text]:focus:not([readonly])+label, input[type=password]:focus:not([readonly])+label, input[type=email]:focus:not([readonly])+label, input[type=url]:focus:not([readonly])+label, input[type=time]:focus:not([readonly])+label, input[type=date]:focus:not([readonly])+label, input[type=datetime-local]:focus:not([readonly])+label, input[type=tel]:focus:not([readonly])+label, input[type=number]:focus:not([readonly])+label, input[type=search]:focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+    color: rgba(100,100,100,0.87);
+}
 
 // FOOTER
 
