@@ -278,6 +278,7 @@ input[type=text]:focus:not([readonly])+label, input[type=password]:focus:not([re
 footer.page-footer {
     background-color: rgba(0,0,0,0.95);
     text-align: center;
+    padding-top: 30px;
 
     .footer-copyright {
         background-color: black;
