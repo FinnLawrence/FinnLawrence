@@ -1,13 +1,7 @@
 ---
 ---
 
-$light-blue: #5ec7d1;
-$mid-blue: #1ba1ab;
-$light-grey: #e8e8e8;
-$dark-grey: #231f20;
-$dark-grey-hover: #565253;
-
-$instagram: #3f729b;
+$linkedin: #0077b5;
 $facebook: #3b5998;
 $twitter: #55acee;
 
@@ -17,6 +11,7 @@ $twitter: #55acee;
 
 html, body {
     font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.3px;
 }
 
 // GENERAL
@@ -73,8 +68,9 @@ html, body {
 .container {
 
     p {
-        font-weight: 200;
+        font-weight: 300;
         line-height: 1.6;
+
     }
 }
 
@@ -84,23 +80,106 @@ html, body {
         margin-bottom: 0px;
     }
 
-    #bio {
+    .section {
         padding-top: 80px;
         padding-bottom: 80px
     }
 }
 
-// FORMS
+// WORK
+
+.work-experience {
+
+    .heading {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+        color: rgba(0,0,0,0.87);
+        -o-transition: color .5s ease;
+        -ms-transition: color .5s ease;
+        -moz-transition: color .5s ease;
+        -webkit-transition: color .5s ease;
+        transition: color .5s ease;
+    }
+
+    a:hover .heading, a:active .heading {
+        color: rgba(100,100,100,0.87);
+    }
+
+    .dates {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-weight: 400;
+    }
+
+    .title {
+        margin-top: 0px;
+        font-weight: 400;
+    }
+}
+
+.work-experience-separator {
+    height: 160px;
+
+    .rule {
+        height: 80px;
+        width: 10%;
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+    }
+}
 
 // LOADING
 
 // FONT
 
-// CAROUSEL
-
 // BUTTONS
 
 // FOOTER
+
+footer.page-footer {
+    background-color: rgba(0,0,0,0.95);
+    text-align: center;
+
+    .footer-copyright {
+        background-color: black;
+    }
+
+    .blurb {
+        
+        a {
+            -o-transition: color .5s ease;
+            -ms-transition: color .5s ease;
+            -moz-transition: color .5s ease;
+            -webkit-transition: color .5s ease;
+            transition: color .5s ease;
+            color: white;
+        }
+        
+        a:hover, a:active {
+            color: rgba(100,100,100,0.87);
+        }
+    }
+
+    .fa {
+        -o-transition: color .5s ease;
+        -ms-transition: color .5s ease;
+        -moz-transition: color .5s ease;
+        -webkit-transition: color .5s ease;
+        transition: color .5s ease;
+    }
+
+    .fa-linkedin:hover, .fa-linkedin:active {
+        color: $linkedin !important;
+    }
+
+    .fa-facebook:hover, .fa-facebook:active {
+        color: $facebook !important;
+    }
+
+    .fa-twitter:hover, .fa-twitter:active {
+        color: $linkedin !important;
+    }
+}
 
 // BLOG
 
@@ -112,7 +191,7 @@ html, body {
     left: 0px;
     bottom: 0px;
     right: 0px;
-    background-color: $dark-grey;
+    background-color: grey;
     z-index: 10000;
     text-align: center;
     padding: 20px;
