@@ -4,15 +4,13 @@
     <head>
         {% include imports.html %}
         {% include analytics.html %}
+        {% include scripts-critical.html %}
     </head>
     <body>
         <header>
             
         </header>
         <main>
-            <!-- LOADING -->
-            {% include loading.html %}
-
             {{ content }}
 
             {% include fullscreen-warnings.html %}
@@ -20,5 +18,7 @@
         <footer class="page-footer">
             {% include footer.html %}
         </footer>
+        
+        {% include scripts.html %}
     </body>
 </html>
