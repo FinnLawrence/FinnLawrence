@@ -7,6 +7,7 @@ $facebook: #3b5998;
 $twitter: #55acee;
 
 $font-color: #454545;
+$hover-color: #777777;
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic,300,300italic);
 
@@ -27,8 +28,30 @@ p {
     color: $font-color;
 }
 
+p.highlight {
+    font-style: italic;
+    font-size: 18px;
+}
+
+p a {
+    color: $font-color;
+    -o-transition: color .5s ease;
+    -ms-transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
+}
+
+p a:hover, p a:active {
+    color: $hover-color;
+}
+
 section {
     padding: 50px 0px;
+}
+
+.italics {
+    font-style: italic;
 }
 
 .wrapper {
@@ -44,6 +67,32 @@ hr {
     border: 0px;
     border-bottom: 2px solid $font-color;
     margin: 0px;
+}
+
+ul.bullets {
+    list-style-type: disc;
+    padding-left: 40px;
+
+    li {
+        list-style-type: disc;
+
+        p {
+            margin: 10px 0px;
+        }
+    }
+
+    li:first-child {
+        p {
+            margin-top: 15px;
+        }
+    }
+}
+
+.subtitle {
+    font-size: 7px;
+    position: relative;
+    top: 10px;
+    left: -10px;
 }
 
 .work-experience {
