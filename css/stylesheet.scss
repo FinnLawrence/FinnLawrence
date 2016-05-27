@@ -46,6 +46,10 @@ p a:hover, p a:active {
     color: $hover-color;
 }
 
+.text-title {
+    display: none;
+}
+
 section {
     padding: 50px 0px;
 }
