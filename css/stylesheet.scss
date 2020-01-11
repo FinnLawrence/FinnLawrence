@@ -298,7 +298,8 @@ ul.bullets {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+.btn:focus {
   box-shadow: none;
   background-color: rgba(100, 100, 100, 0.87);
 }
